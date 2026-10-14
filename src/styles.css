@@ -43,12 +43,7 @@ button:focus-visible, textarea:focus-visible { outline: 2px solid var(--text); o
 }
 h1 {
   font-family: Georgia, 'Times New Roman', serif; font-weight: 900; font-size: 38px;
-  letter-spacing: -2px; line-height: 1; margin: 0; padding-bottom: 3px;
-}
-.brand-prefix {
-  display: block; font-family: Arial, Helvetica, sans-serif; font-size: 10px;
-  font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; text-align: center;
-  line-height: 1.2; margin-bottom: 2px;
+  letter-spacing: -2px; line-height: 1; margin: 0; padding-bottom: 3px; white-space: nowrap;
 }
 .header-side { display: flex; gap: 10px; align-items: center; }
 .header-side-right { justify-content: flex-end; }
@@ -162,9 +157,10 @@ dialog p { font-size: 14px; line-height: 1.55; }
 @keyframes bounce { 0%, 20% { transform: translateY(0); } 40% { transform: translateY(-28px); } 50% { transform: translateY(5px); } 60% { transform: translateY(-14px); } 80% { transform: translateY(3px); } 100% { transform: translateY(0); } }
 @media (min-height: 900px) { .game { max-height: 840px; } }
 @media (max-width: 600px) {
-  .header { height: 58px; padding: 0 10px; }
-  h1 { font-size: 34px; }
+  .header { height: 58px; padding: 0 10px; column-gap: 6px; }
+  h1 { font-size: clamp(18px, 5.6vw, 34px); letter-spacing: -1px; }
   .header-side { gap: 2px; }
+  .header .icon-button { width: 28px; padding: 2px; }
   .game { height: calc(100svh - 58px); min-height: 510px; }
   .board { width: 310px; height: 372px; }
   .keyboard { padding: 0 6px; }
