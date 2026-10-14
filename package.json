@@ -1,9 +1,9 @@
 {
-  "name": "wibecoded-wordle",
+  "name": "wibe-coded-wordle",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "A minimal, unlimited Wordle game.",
+  "description": "Wibe Coded Wordle — a minimal, unlimited word game.",
   "scripts": {
     "start": "node server.mjs",
     "dev": "node server.mjs",

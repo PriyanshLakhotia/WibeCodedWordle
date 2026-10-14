@@ -1,4 +1,4 @@
-# Wordle Unlimited
+# Wibe Coded Wordle
 
 A minimal Wordle clone with a random puzzle every game. Six guesses, five letters, the familiar grid and keyboard, and proper repeated-letter scoring.
 

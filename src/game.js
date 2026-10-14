@@ -91,6 +91,6 @@ export function recordResult(stats, game) {
 export function makeShareText(game, highContrast = false, dark = false) {
   const status = getGameStatus(game.guesses, game.answer);
   const colors = { correct: highContrast ? '🟧' : '🟩', present: highContrast ? '🟦' : '🟨', absent: dark ? '⬛' : '⬜' };
-  return `Wordle Unlimited ${status === 'won' ? game.guesses.length : 'X'}/6${game.hardMode ? '*' : ''}\n\n`
+  return `Wibe Coded Wordle ${status === 'won' ? game.guesses.length : 'X'}/6${game.hardMode ? '*' : ''}\n\n`
     + game.guesses.map(guess => scoreGuess(guess, game.answer).map(state => colors[state]).join('')).join('\n');
 }

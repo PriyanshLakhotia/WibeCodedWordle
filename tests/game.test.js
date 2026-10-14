@@ -97,7 +97,7 @@ test('unfinished games do not affect statistics', () => {
 test('share results use spoiler-free squares and mark hard mode', () => {
   const game = { answer: 'APPLE', guesses: ['CRANE', 'APPLE'], hardMode: true };
   const text = makeShareText(game);
-  assert.equal(text, 'Wordle Unlimited 2/6*\n\n⬜⬜🟨⬜🟩\n🟩🟩🟩🟩🟩');
+  assert.equal(text, 'Wibe Coded Wordle 2/6*\n\n⬜⬜🟨⬜🟩\n🟩🟩🟩🟩🟩');
   assert(!text.includes('APPLE'));
   assert(makeShareText(game, true).endsWith('🟧🟧🟧🟧🟧'));
   assert(makeShareText(game, false, true).includes('⬛⬛🟨⬛🟩'));

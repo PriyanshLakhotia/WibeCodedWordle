@@ -51,7 +51,7 @@ function listen(serverPort, optional = false) {
     if (!optional) process.exit(1);
   });
   server.listen(serverPort, '127.0.0.1', () => {
-    console.log(`${optional ? 'Browser preview' : 'Wordle'}: http://localhost:${serverPort}`);
+    console.log(`${optional ? 'Browser preview' : 'Wibe Coded Wordle'}: http://localhost:${serverPort}`);
   });
   servers.push(server);
 }

@@ -45,6 +45,11 @@ h1 {
   font-family: Georgia, 'Times New Roman', serif; font-weight: 900; font-size: 38px;
   letter-spacing: -2px; line-height: 1; margin: 0; padding-bottom: 3px;
 }
+.brand-prefix {
+  display: block; font-family: Arial, Helvetica, sans-serif; font-size: 10px;
+  font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; text-align: center;
+  line-height: 1.2; margin-bottom: 2px;
+}
 .header-side { display: flex; gap: 10px; align-items: center; }
 .header-side-right { justify-content: flex-end; }
 .icon-button {
