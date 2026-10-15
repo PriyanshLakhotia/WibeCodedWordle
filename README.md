@@ -12,6 +12,12 @@ npm start
 
 The server runs at **http://localhost:6000**. Browsers reserve port 6000 for X11 and typically block it, so the same process also serves the identical app at **http://localhost:6001** for browser play. Both listeners are restricted to the local computer. Use `PORT=3000 npm start` to choose a different port.
 
+## ChatGPT Sites
+
+[Play Wibe Coded Wordle](https://wibe-coded-wordle.fuzzy-ball-5468.chatgpt.site)
+
+`npm run build` copies the app and bundled word lists into `dist/` for static hosting. The Site identity and static output directory are recorded in `.openai/hosting.json`. No server, secrets, or database are required for the hosted game.
+
 ## Features
 
 - Random answers from the original 2,315-word Wordle answer pool; no immediate repeats.
